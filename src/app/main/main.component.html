@@ -1,0 +1,45 @@
+<div class="main" 
+[ngClass]="{'cloudy': weather === 'Clouds',
+            'sunny': weather === 'Clear',
+            'rainy': weather === 'Rain',
+            'snowy': weather === 'Snow',
+            'fog': weather ==='Mist',
+            'temperatureMAX': temperatureMAX === 'temp_max',
+            'temperatureMIN': temperatureMIN === 'temp_min',
+            'windDirection': windDirection === 'deg',
+            'windSpeed': windSpeed === 'speed',
+            'Humidity': Humidity === 'humidity',
+            'Sunrise': Sunrise === 'sunrise',
+            'Sunset': Sunset === 'sunset',
+            'Time': Time === 'dt'}">
+</div>
+<div id="forms">
+  <span>Choose your City</span>
+  <select [(ngModel)]="selectedCity" (ngModelChange)="showWeather($event)">
+    <option *ngFor="let city of cities">{{ city }}</option>
+  </select>
+</div>
+<div class="TableOfInfo">
+	<div class="table">
+		<div class="row header">
+			<div class="cell">Max temperature</div>
+			<div class="cell">Min temperature</div>
+			<div class="cell">Wind direction</div>
+			<div class="cell">Wind speed</div>
+      <div class="cell">Humidity</div>
+			<div class="cell">Sunrise</div>
+			<div class="cell">Sunset</div>
+			<div class="cell">Time</div>
+    </div>
+		<div class="row">
+      <div class="cell" data-title="Max temperature">{{ temperatureMAX }} °C</div>
+			<div class="cell" data-title="Min temperature">{{ temperatureMIN }} °C</div>
+			<div class="cell" data-title="Wind direction">{{ windDirection }} °</div>
+      <div class="cell" data-title="Wind speed">{{ windSpeed }} m/s</div>
+      <div class="cell" data-title="Humidity">{{ Humidity }} %</div>
+			<div class="cell" data-title="Sunrise">{{ Sunrise }}</div>
+			<div class="cell" data-title="Sunset">{{ Sunset }}</div>
+			<div class="cell" data-title="Time">{{ Time }}</div>
+		</div>
+	</div>
+</div>

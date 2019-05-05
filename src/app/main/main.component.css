@@ -1,0 +1,235 @@
+.main {
+    width: 1000em;
+    height: 70em;
+    position: fixed;
+    background-image: url(../../assets/back.jpeg);
+    z-index: 0;
+    background-position: center center;
+}
+.rainy {
+    background-image: url(../../assets/rainy.jpg);
+    width: 1920px;
+    height: 1000px;
+    background-position: center center;
+}
+.fog {
+    background-image: url(../../assets/fog.jpg);
+    width: 1920px;
+    height: 1000px;
+    background-position: center center;
+}
+.sunny {
+    background-image: url(../../assets/sunny.jpeg);
+    width: 1920px;
+    height: 1000px;
+    background-position: center center;
+}
+.snowy {
+    background-image: url(../../assets/snowy.jpg);
+    width: 1920px;
+    height: 1000px;
+    background-position: center center;
+}
+.cloudy {
+    background-image: url(../../assets/cloudy.png);
+    width: 1920px;
+    height: 1000px;
+    background-position: center center;
+}
+#forms {
+    position: fixed;
+    background-color: #add8e6;
+    top: 35%;
+    left: 40%;
+    width: 350px;
+    height: 200px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 10px 10px 20px;
+}
+select {
+    margin-top: 50px;
+}
+#forms > span {
+    position: relative;
+    font-size: 40px;
+    top: 10px;
+}
+.TableOfInfo {
+    display: block;
+    width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    right: 23%;
+}
+.table {
+    width: 100%;
+    display: table;
+    margin: 0;
+}
+.row {
+    display: table-row;
+    background: #fff;
+}
+.row.header {
+    color: #ffffff;
+    background: #6c7ae0;
+}
+.cell {
+    display: table-cell;
+}
+.row .cell {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.row.header .cell {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset !important;
+  
+    padding-top: 19px;
+    padding-bottom: 19px;}
+.row .cell {
+    padding-left: 40px;
+}
+.table, .row {
+    width: 100% !important;
+}
+@media (max-width: 1482px) {
+    .TableOfInfo {
+        left: 15%;
+    }
+}
+@media (max-width: 1263px) {
+    .TableOfInfo {
+        left: 10%;
+        
+    }
+}
+@media screen and (max-width: 1150px) {
+    .table {
+      display: block;
+      
+    }
+  }
+@media screen and (max-width: 1150px) {
+  .row {
+    display: block;
+  }
+
+  .row.header {
+    padding: 0;
+    height: 0px;
+  }
+
+  .row.header .cell {
+    display: none;
+  }
+
+  .row .cell:before {
+    font-size: 12px;
+    color: #808080;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    content: attr(data-title);
+    min-width: 98px;
+    display: block;
+  }
+}
+@media screen and (max-width: 1150px) {
+    .cell {
+      display: block;
+    }
+    .main {
+        width: 100em;
+        height: 84.5em;
+    }
+}
+@media (max-width: 1150px) {
+    .row {
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 18px;
+      padding-top: 30px;
+      padding-right: 15px;
+      margin: 0;
+    }
+    
+    .row .cell {
+      border: none;
+      padding-left: 30px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    .row .cell:nth-child(1) {
+      padding-left: 30px;
+    }
+    
+    .row .cell {
+      font-family: Poppins-Regular;
+      font-size: 18px;
+      color: #555555;
+      line-height: 1.2;
+      font-weight: unset !important;
+    }
+  
+    .table, .row, .cell {
+      width: 100% !important;
+    }
+    .TableOfInfo {
+        width: 400px;
+        left: 38%;
+        position: absolute;
+        top: 35%;
+        margin-top: 20px;
+    }
+    #forms {
+        top: 8%;
+        position: absolute;
+    }
+}
+@media (max-width: 1019px) {
+    .TableOfInfo {
+        left: 28%;
+    }
+    #forms {
+        left: 31%;
+    }
+}
+@media (max-width: 695px) {
+    .TableOfInfo {
+        left: 20%;
+    }
+    #forms {
+        left: 23%;
+    }
+}
+@media (max-width: 520px) {
+    .TableOfInfo {
+        left: 10%;
+        top: 40%;
+    }
+    #forms {
+        left: 13%;
+        top: 10%;
+    }
+}
+@media (max-width: 420px) {
+    .TableOfInfo {
+        width: 350px;
+        left: 0%;
+        margin: 10%;
+    }
+    #forms {
+        margin: 10%;
+        left: 0%;
+    }
+}
