@@ -1,13 +1,8 @@
+import { Cities } from './../models/city.model';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import * as moment from 'moment-timezone';
-
-interface Cities {
-  name: string;
-  countryName: string;
-  continentName: string;
-}
 
 @Component({
   selector: 'app-main',
@@ -60,6 +55,6 @@ export class MainComponent implements OnInit {
   }
 
   getCities(): Observable<Cities[]> {
-    return this._http.get<Cities[]>('/src/app/cities/city.list.model.json');
+    return this._http.get<Cities[]>('/src/app/cities/city.list.json');
   }
 }
