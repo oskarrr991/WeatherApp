@@ -1,3 +1,5 @@
+# Weather APP
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 I used the API from https://openweathermap.org/ to get all the weather info.
 I made city list json file where all city names are listed (and putted them in <select> with help of ngModel).
