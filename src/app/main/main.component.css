@@ -1,11 +1,3 @@
-.main {
-    width: 1000em;
-    height: 70em;
-    position: fixed;
-    background-image: url(../../assets/back.jpeg);
-    z-index: 0;
-    background-position: center center;
-}
 .rainy {
     background-image: url(../../assets/rainy.jpg);
     width: 1920px;
@@ -13,39 +5,68 @@
     background-position: center center;
 }
 .fog {
-    background-image: url(../../assets/fog.jpg);
-    width: 1920px;
-    height: 1000px;
-    background-position: center center;
+  position: fixed;
+  background-image: url(../../assets/fog.jpg);
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .sunny {
-    background-image: url(../../assets/sunny.jpeg);
-    width: 1920px;
-    height: 1000px;
-    background-position: center center;
+  position: fixed;
+  background-image: url(../../assets/sunny.jpeg);
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .snowy {
-    background-image: url(../../assets/snowy.jpg);
-    width: 1920px;
-    height: 1000px;
-    background-position: center center;
+  position: fixed;
+  background-image: url(../../assets/snowy.jpg);
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .cloudy {
-    background-image: url(../../assets/cloudy.png);
-    width: 1920px;
-    height: 1000px;
-    background-position: center center;
+  position: fixed;
+  background-image: url(../../assets/cloudy.png);
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 #forms {
-    position: fixed;
+    position: relative;
     background-color: #add8e6;
-    top: 35%;
-    left: 40%;
+    top: 300px;
+    margin: auto;
     width: 350px;
     height: 200px;
     border-radius: 50px;
     text-align: center;
     box-shadow: 10px 10px 20px;
+    z-index: 1;
 }
 select {
     margin-top: 50px;
@@ -56,14 +77,14 @@ select {
     top: 10px;
 }
 .TableOfInfo {
-    display: block;
+    display: none;
     width: 1000px;
     border-radius: 10px;
     overflow: hidden;
-    position: absolute;
-    top: 60%;
-    left: 23%;
-    right: 23%;
+    position: relative;
+    top: 450px;
+    margin: auto;
+    margin-bottom: 50px;
 }
 .table {
     width: 100%;
@@ -96,28 +117,17 @@ select {
     font-weight: unset !important;
   
     padding-top: 19px;
-    padding-bottom: 19px;}
+    padding-bottom: 19px;
+}
 .row .cell {
     padding-left: 40px;
 }
 .table, .row {
     width: 100% !important;
 }
-@media (max-width: 1482px) {
-    .TableOfInfo {
-        left: 15%;
-    }
-}
-@media (max-width: 1263px) {
-    .TableOfInfo {
-        left: 10%;
-        
-    }
-}
 @media screen and (max-width: 1150px) {
     .table {
       display: block;
-      
     }
   }
 @media screen and (max-width: 1150px) {
@@ -149,9 +159,8 @@ select {
     .cell {
       display: block;
     }
-    .main {
-        width: 100em;
-        height: 84.5em;
+    body {
+        background-image: url(/../../assets/mobile_back.jpeg);
     }
 }
 @media (max-width: 1150px) {
@@ -162,7 +171,6 @@ select {
       padding-right: 15px;
       margin: 0;
     }
-    
     .row .cell {
       border: none;
       padding-left: 30px;
@@ -172,7 +180,6 @@ select {
     .row .cell:nth-child(1) {
       padding-left: 30px;
     }
-    
     .row .cell {
       font-family: Poppins-Regular;
       font-size: 18px;
@@ -180,56 +187,14 @@ select {
       line-height: 1.2;
       font-weight: unset !important;
     }
-  
     .table, .row, .cell {
       width: 100% !important;
     }
     .TableOfInfo {
         width: 400px;
-        left: 38%;
-        position: absolute;
-        top: 35%;
-        margin-top: 20px;
+        top: 300px;
     }
     #forms {
-        top: 8%;
-        position: absolute;
-    }
-}
-@media (max-width: 1019px) {
-    .TableOfInfo {
-        left: 28%;
-    }
-    #forms {
-        left: 31%;
-    }
-}
-@media (max-width: 695px) {
-    .TableOfInfo {
-        left: 20%;
-    }
-    #forms {
-        left: 23%;
-    }
-}
-@media (max-width: 520px) {
-    .TableOfInfo {
-        left: 10%;
-        top: 40%;
-    }
-    #forms {
-        left: 13%;
-        top: 10%;
-    }
-}
-@media (max-width: 420px) {
-    .TableOfInfo {
-        width: 350px;
-        left: 0%;
-        margin: 10%;
-    }
-    #forms {
-        margin: 10%;
-        left: 0%;
+      top: 150px;
     }
 }

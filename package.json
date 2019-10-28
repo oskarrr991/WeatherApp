@@ -21,6 +21,9 @@
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
     "core-js": "^2.5.4",
+    "country-list-js": "^3.1.5",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
   },
@@ -31,6 +34,8 @@
     "@angular/language-service": "^6.1.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
+    "@types/moment": "^2.13.0",
+    "@types/moment-timezone": "^0.5.12",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",

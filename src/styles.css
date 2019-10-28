@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    margin: 0 !important;
+    background-image: url(/../../assets/back.jpeg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+html {
+    height: 100%;
+}
+@media screen and (max-width: 1150px) {
+    body {
+        background-image: url(/../../assets/mobile_back.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
