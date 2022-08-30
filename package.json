@@ -23,7 +23,7 @@
     "core-js": "^2.5.4",
     "country-list-js": "^3.1.5",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.25",
+    "moment-timezone": "^0.5.35",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
   },
